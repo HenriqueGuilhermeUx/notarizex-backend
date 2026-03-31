@@ -227,18 +227,328 @@ Santos, {today}.
 
 Registrado na Blockchain NotarizeX — Cartório Digital 3.0""",
 
-        'nda': f"""ACORDO DE CONFIDENCIALIDADE (NDA)
+        'locacao_comercial': f"""CONTRATO DE LOCAÇÃO COMERCIAL
+
+LOCADOR: {party_a}
+LOCATÁRIO: {party_b}
+
+OBJETO DA LOCAÇÃO: {description}
+
+CLÁUSULA 1ª — DO OBJETO
+O LOCADOR cede ao LOCATÁRIO, para fins comerciais, o imóvel descrito acima, pelo prazo e valor acordados entre as partes.
+
+CLÁUSULA 2ª — DO PRAZO E VALOR
+O prazo e valor do aluguel serão definidos em aditivo contratual, reajustável anualmente pelo IGPM ou índice substituto.
+
+CLÁUSULA 3ª — DAS OBRIGAÇÕES
+O LOCATÁRIO obriga-se a usar o imóvel exclusivamente para fins comerciais lícitos, conservá-lo e devolvê-lo nas mesmas condições de recebimento.
+
+CLÁUSULA 4ª — DA VALIDADE JURÍDICA
+Este contrato é regido pela Lei 8.245/1991 (Lei do Inquilinato) e tem plena validade jurídica com assinatura eletrônica qualificada nos termos da Lei 14.063/2020.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+LOCADOR                              LOCATÁRIO
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'emprestimo_p2p': f"""CONTRATO DE EMPRÉSTIMO ENTRE PESSOAS FÍSICAS (P2P)
+
+CREDOR: {party_a}
+DEVEDOR: {party_b}
+
+OBJETO: {description}
+
+CLÁUSULA 1ª — DO VALOR E CONDIÇÕES
+O CREDOR empresta ao DEVEDOR o valor acordado entre as partes, nas condições descritas no objeto acima.
+
+CLÁUSULA 2ª — DO PRAZO DE PAGAMENTO
+O DEVEDOR compromete-se a devolver o valor emprestado no prazo e nas condições acordadas, sob pena de incidência de juros de mora de 1% ao mês e multa de 2% sobre o valor em atraso.
+
+CLÁUSULA 3ª — DAS GARANTIAS
+As partes poderão estabelecer garantias adicionais mediante aditivo contratual.
+
+CLÁUSULA 4ª — DA VALIDADE JURÍDICA
+Este instrumento é regido pelo Código Civil Brasileiro (Arts. 586 a 592) e tem plena validade jurídica com assinatura eletrônica qualificada.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+CREDOR                               DEVEDOR
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'confissao_divida': f"""INSTRUMENTO PARTICULAR DE CONFISSÃO DE DÍVIDA
+
+CREDOR: {party_a}
+DEVEDOR: {party_b}
+
+OBJETO: {description}
+
+CLÁUSULA 1ª — DA CONFISSÃO
+O DEVEDOR confessa, de forma irrevogável e irretratável, que deve ao CREDOR o valor descrito no objeto, proveniente de obrigação lícita.
+
+CLÁUSULA 2ª — DO PAGAMENTO
+O DEVEDOR compromete-se a quitar o débito confessado nas condições acordadas entre as partes.
+
+CLÁUSULA 3ª — DOS ENCARGOS
+Em caso de inadimplemento, incidirão juros de mora de 1% ao mês, correção monetária pelo IPCA e multa de 2%.
+
+CLÁUSULA 4ª — DO TÍTULO EXECUTIVO
+Este instrumento constitui título executivo extrajudicial nos termos do Art. 784, III do CPC/2015.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+CREDOR                               DEVEDOR CONFESSANTE
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'nda': f"""ACORDO DE CONFIDENCIALIDADE E NÃO DIVULGAÇÃO (NDA)
 
 PARTE DIVULGANTE: {party_a}
 PARTE RECEPTORA: {party_b}
 
-As partes comprometem-se a manter em sigilo absoluto todas as informações confidenciais relacionadas a: {description}
+OBJETO: {description}
 
-Este acordo é regido pela Lei 9.279/1996 e tem validade de 5 (cinco) anos a partir da data de assinatura.
+CLÁUSULA 1ª — DAS INFORMAÇÕES CONFIDENCIAIS
+Consideram-se confidenciais todas as informações técnicas, comerciais, financeiras, estratégicas e operacionais relacionadas ao objeto acima, independentemente do meio em que sejam transmitidas.
+
+CLÁUSULA 2ª — DAS OBRIGAÇÕES
+A PARTE RECEPTORA obriga-se a: (i) não divulgar as informações a terceiros; (ii) utilizá-las exclusivamente para os fins acordados; (iii) adotar medidas de segurança equivalentes às que utiliza para proteger suas próprias informações confidenciais.
+
+CLÁUSULA 3ª — DO PRAZO
+Este acordo vigorará por 5 (cinco) anos a partir da assinatura, independentemente do término da relação comercial entre as partes.
+
+CLÁUSULA 4ª — DAS PENALIDADES
+O descumprimento deste acordo sujeitará a parte infratora ao pagamento de indenização por perdas e danos, nos termos dos Arts. 186 e 927 do Código Civil.
+
+CLÁUSULA 5ª — DA VALIDADE JURÍDICA
+Este acordo é regido pela Lei 9.279/1996 e tem plena validade com assinatura eletrônica qualificada nos termos da Lei 14.063/2020.
 
 Santos, {today}.
 
-Registrado na Blockchain NotarizeX — Cartório Digital 3.0""",
+___________________________          ___________________________
+{party_a}                            {party_b}
+PARTE DIVULGANTE                     PARTE RECEPTORA
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'contrato_trabalho': f"""CONTRATO INDIVIDUAL DE TRABALHO
+
+EMPREGADOR: {party_a}
+EMPREGADO: {party_b}
+
+OBJETO / FUNÇÃO: {description}
+
+CLÁUSULA 1ª — DA ADMISSÃO E FUNÇÃO
+O EMPREGADO é admitido para exercer a função descrita acima, comprometendo-se a cumprir as atribuições inerentes ao cargo com dedicação e profissionalismo.
+
+CLÁUSULA 2ª — DA JORNADA
+A jornada de trabalho será de 44 (quarenta e quatro) horas semanais, nos termos do Art. 7º, XIII da Constituição Federal e da CLT.
+
+CLÁUSULA 3ª — DA REMUNERAÇÃO
+A remuneração será acordada entre as partes, paga mensalmente até o 5º dia útil do mês subsequente.
+
+CLÁUSULA 4ª — DO PERÍODO DE EXPERIÊNCIA
+As partes poderão estabelecer período de experiência de até 90 (noventa) dias, nos termos do Art. 445 da CLT.
+
+CLÁUSULA 5ª — DA VALIDADE JURÍDICA
+Este contrato é regido pela Consolidação das Leis do Trabalho (CLT) e tem plena validade com assinatura eletrônica qualificada nos termos da Lei 14.063/2020.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+EMPREGADOR                           EMPREGADO
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'banco_horas': f"""ACORDO DE COMPENSAÇÃO DE HORAS (BANCO DE HORAS)
+
+EMPREGADOR: {party_a}
+EMPREGADO: {party_b}
+
+OBJETO: {description}
+
+CLÁUSULA 1ª — DO SISTEMA DE COMPENSAÇÃO
+As partes acordam a adoção do sistema de compensação de jornada (banco de horas), nos termos do Art. 59, §2º da CLT, com prazo máximo de compensação de 12 (doze) meses.
+
+CLÁUSULA 2ª — DOS LIMITES
+A jornada diária não poderá exceder 10 (dez) horas, respeitado o limite semanal de 44 horas e o descanso semanal remunerado.
+
+CLÁUSULA 3ª — DO SALDO POSITIVO
+As horas excedentes não compensadas no prazo serão pagas com adicional de 50% sobre o valor da hora normal.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+EMPREGADOR                           EMPREGADO
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'cessao_direitos': f"""CONTRATO DE CESSÃO DE DIREITOS
+
+CEDENTE: {party_a}
+CESSIONÁRIO: {party_b}
+
+OBJETO DA CESSÃO: {description}
+
+CLÁUSULA 1ª — DA CESSÃO
+O CEDENTE, na qualidade de legítimo titular dos direitos descritos no objeto, cede e transfere ao CESSIONÁRIO, em caráter irrevogável e irretratável, todos os direitos relativos ao bem/crédito acima identificado.
+
+CLÁUSULA 2ª — DO PREÇO E CONDIÇÕES
+A cessão é realizada pelo valor e condições acordados entre as partes, declarando o CEDENTE que o bem/crédito cedido está livre e desembaraçado de quaisquer ônus, dívidas ou litígios.
+
+CLÁUSULA 3ª — DA RESPONSABILIDADE
+O CEDENTE responde pela existência do crédito/direito cedido, mas não pela solvência do devedor, salvo pacto expresso em contrário.
+
+CLÁUSULA 4ª — DA VALIDADE JURÍDICA
+Este contrato é regido pelos Arts. 286 a 298 do Código Civil Brasileiro e tem plena validade com assinatura eletrônica qualificada nos termos da Lei 14.063/2020.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+CEDENTE                              CESSIONÁRIO
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'cessao_precatorio': f"""CONTRATO DE CESSÃO DE DIREITOS SOBRE PRECATÓRIO FEDERAL
+
+CEDENTE (TITULAR DO PRECATÓRIO): {party_a}
+CESSIONÁRIO (ADQUIRENTE): {party_b}
+
+OBJETO: {description}
+
+CLÁUSULA 1ª — DO OBJETO
+O CEDENTE é titular de crédito de precatório federal, devidamente inscrito no sistema do Tribunal competente, conforme identificação no objeto acima.
+
+CLÁUSULA 2ª — DA CESSÃO
+O CEDENTE cede e transfere ao CESSIONÁRIO, em caráter definitivo e irrevogável, todos os seus direitos sobre o precatório identificado, incluindo o direito de receber o valor principal, juros e correção monetária.
+
+CLÁUSULA 3ª — DO PREÇO
+A cessão é realizada pelo valor acordado entre as partes, pago à vista ou nas condições estabelecidas em aditivo, declarando o CEDENTE que o precatório está livre de penhoras, cessões anteriores ou qualquer outro ônus.
+
+CLÁUSULA 4ª — DAS OBRIGAÇÕES DO CEDENTE
+O CEDENTE obriga-se a: (i) assinar todos os documentos necessários para habilitação do CESSIONÁRIO perante o Tribunal; (ii) informar imediatamente qualquer alteração no status do precatório; (iii) não ceder os mesmos direitos a terceiros.
+
+CLÁUSULA 5ª — DA VALIDADE JURÍDICA
+Este contrato é regido pelo Art. 100 da Constituição Federal, pela Resolução CNJ 303/2019 e tem plena validade com assinatura eletrônica qualificada nos termos da Lei 14.063/2020.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+CEDENTE                              CESSIONÁRIO
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'parceria_empresarial': f"""CONTRATO DE PARCERIA EMPRESARIAL
+
+PARCEIRO A: {party_a}
+PARCEIRO B: {party_b}
+
+OBJETO DA PARCERIA: {description}
+
+CLÁUSULA 1ª — DO OBJETO
+As partes estabelecem parceria comercial para desenvolvimento conjunto das atividades descritas no objeto, sem constituição de pessoa jurídica entre elas.
+
+CLÁUSULA 2ª — DAS RESPONSABILIDADES
+Cada parte será responsável pelas obrigações decorrentes de sua atuação específica, não respondendo pelos atos da outra perante terceiros, salvo disposição expressa em contrário.
+
+CLÁUSULA 3ª — DA DIVISÃO DE RESULTADOS
+Os resultados financeiros da parceria serão divididos conforme acordado entre as partes, mediante prestação de contas mensal.
+
+CLÁUSULA 4ª — DA VIGÊNCIA
+Este contrato vigorará pelo prazo acordado, podendo ser renovado mediante aditivo ou rescindido com aviso prévio de 60 (sessenta) dias.
+
+CLÁUSULA 5ª — DA VALIDADE JURÍDICA
+Este contrato é regido pelo Código Civil Brasileiro e tem plena validade com assinatura eletrônica qualificada nos termos da Lei 14.063/2020.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+PARCEIRO A                           PARCEIRO B
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'tokenizacao_ativo': f"""CONTRATO DE TOKENIZAÇÃO DE ATIVO REAL (RWA)
+
+PROPRIETÁRIO DO ATIVO: {party_a}
+PLATAFORMA DE TOKENIZAÇÃO: {party_b}
+
+ATIVO A SER TOKENIZADO: {description}
+
+CLÁUSULA 1ª — DO OBJETO
+O PROPRIETÁRIO autoriza a PLATAFORMA a realizar a tokenização digital do ativo descrito, representando-o em tokens digitais na blockchain, nos termos da regulamentação vigente.
+
+CLÁUSULA 2ª — DA REPRESENTAÇÃO DIGITAL
+Cada token emitido representará uma fração do ativo real, conferindo ao seu detentor os direitos econômicos proporcionais à participação, conforme laudo de avaliação e prospecto de emissão.
+
+CLÁUSULA 3ª — DA CUSTÓDIA
+O ativo físico permanecerá sob custódia legal do PROPRIETÁRIO ou de custodiante qualificado, devidamente registrado e auditável.
+
+CLÁUSULA 4ª — DA CONFORMIDADE REGULATÓRIA
+A tokenização observará as diretrizes da CVM (Resolução 88/2022), do BACEN e demais órgãos reguladores aplicáveis ao tipo de ativo.
+
+CLÁUSULA 5ª — DA VALIDADE JURÍDICA
+Este contrato tem plena validade com assinatura eletrônica qualificada nos termos da Lei 14.063/2020 e registro imutável em blockchain.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+PROPRIETÁRIO DO ATIVO               PLATAFORMA NOTARIZEX
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
+
+        'promessa_compra_venda': f"""INSTRUMENTO PARTICULAR DE PROMESSA DE COMPRA E VENDA
+
+PROMITENTE VENDEDOR: {party_a}
+PROMITENTE COMPRADOR: {party_b}
+
+OBJETO: {description}
+
+CLÁUSULA 1ª — DO OBJETO
+O PROMITENTE VENDEDOR promete vender ao PROMITENTE COMPRADOR o bem descrito no objeto, livre e desembaraçado de quaisquer ônus, pelo preço e condições acordados.
+
+CLÁUSULA 2ª — DO PREÇO E FORMA DE PAGAMENTO
+O preço total e as condições de pagamento serão definidos pelas partes e constituirão parte integrante deste instrumento.
+
+CLÁUSULA 3ª — DA ESCRITURA DEFINITIVA
+A escritura definitiva de compra e venda será lavrada após a quitação integral do preço, no prazo máximo acordado entre as partes.
+
+CLÁUSULA 4ª — DA CLÁUSULA PENAL
+O descumprimento injustificado por qualquer das partes ensejará o pagamento de multa de 10% sobre o valor total do negócio.
+
+CLÁUSULA 5ª — DA VALIDADE JURÍDICA
+Este instrumento é regido pelos Arts. 462 a 466 do Código Civil e tem plena validade com assinatura eletrônica qualificada nos termos da Lei 14.063/2020.
+
+Santos, {today}.
+
+___________________________          ___________________________
+{party_a}                            {party_b}
+PROMITENTE VENDEDOR                  PROMITENTE COMPRADOR
+
+Registrado na Blockchain NotarizeX — Cartório Digital 3.0
+CNPJ: 61.922.930/0001-97""",
     }
     return templates.get(contract_type, f"""CONTRATO — {contract_type.upper().replace('_', ' ')}
 
@@ -340,15 +650,26 @@ def get_me():
 def get_templates():
     return jsonify({
         'templates': [
-            {'id': 'prestacao_servicos', 'name': 'Prestação de Serviços', 'icon': '🤝', 'category': 'Comercial'},
-            {'id': 'compra_venda', 'name': 'Compra e Venda', 'icon': '🏠', 'category': 'Imóveis / Bens'},
-            {'id': 'locacao_comercial', 'name': 'Locação Comercial', 'icon': '🏢', 'category': 'Imóveis'},
-            {'id': 'emprestimo_p2p', 'name': 'Empréstimo P2P', 'icon': '💰', 'category': 'Financeiro'},
-            {'id': 'confissao_divida', 'name': 'Confissão de Dívida', 'icon': '📋', 'category': 'Financeiro'},
-            {'id': 'nda', 'name': 'NDA / Confidencialidade', 'icon': '🔒', 'category': 'Trabalhista'},
-            {'id': 'contrato_trabalho', 'name': 'Contrato de Trabalho', 'icon': '👷', 'category': 'Trabalhista'},
-            {'id': 'banco_horas', 'name': 'Banco de Horas', 'icon': '⏰', 'category': 'Trabalhista'},
-            {'id': 'personalizado', 'name': 'Contrato Personalizado', 'icon': '📜', 'category': 'Sob Medida'},
+            # Comercial
+            {'id': 'prestacao_servicos',   'name': 'Prestação de Serviços',          'icon': '🤝', 'category': 'Comercial'},
+            {'id': 'parceria_empresarial', 'name': 'Parceria Empresarial',           'icon': '🏛️', 'category': 'Comercial'},
+            # Imóveis
+            {'id': 'compra_venda',         'name': 'Compra e Venda',                 'icon': '🏠', 'category': 'Imóveis / Bens'},
+            {'id': 'promessa_compra_venda','name': 'Promessa de Compra e Venda',     'icon': '📝', 'category': 'Imóveis / Bens'},
+            {'id': 'locacao_comercial',    'name': 'Locação Comercial',              'icon': '🏢', 'category': 'Imóveis'},
+            # Financeiro
+            {'id': 'emprestimo_p2p',       'name': 'Empréstimo P2P',                 'icon': '💰', 'category': 'Financeiro'},
+            {'id': 'confissao_divida',     'name': 'Confissão de Dívida',            'icon': '📋', 'category': 'Financeiro'},
+            {'id': 'cessao_direitos',      'name': 'Cessão de Direitos',             'icon': '🔄', 'category': 'Financeiro'},
+            {'id': 'cessao_precatorio',    'name': 'Cessão de Precatório Federal',   'icon': '⚖️', 'category': 'Financeiro'},
+            # Trabalhista
+            {'id': 'nda',                  'name': 'NDA / Confidencialidade',        'icon': '🔒', 'category': 'Trabalhista'},
+            {'id': 'contrato_trabalho',    'name': 'Contrato de Trabalho',           'icon': '👷', 'category': 'Trabalhista'},
+            {'id': 'banco_horas',          'name': 'Banco de Horas',                 'icon': '⏰', 'category': 'Trabalhista'},
+            # Web3 / Tokenização
+            {'id': 'tokenizacao_ativo',    'name': 'Tokenização de Ativo (RWA)',      'icon': '🔗', 'category': 'Web3 / RWA'},
+            # Sob Medida
+            {'id': 'personalizado',        'name': 'Contrato Personalizado',         'icon': '📜', 'category': 'Sob Medida'},
         ]
     })
 
