@@ -648,22 +648,31 @@ def create_pix_payment():
 
 @app.route('/api/payments/webhook', methods=['POST'])
 def payment_webhook():
-    data = request.get_json()
-    payment_id = data.get('data', {}).get('id')
+    try:
+        # force=True aceita JSON mesmo sem Content-Type: application/json
+        # silent=True evita erro se o body não for JSON válido
+        data = request.get_json(force=True, silent=True) or {}
+        
+        payment_id = data.get('data', {}).get('id')
 
-    if payment_id:
-        result = mp_sdk.payment().get(payment_id)
-        payment = result.get('response', {})
+        if payment_id:
+            try:
+                result = mp_sdk.payment().get(payment_id)
+                payment = result.get('response', {})
 
-        if payment.get('status') == 'approved':
-            db = get_db()
-            db.execute(
-                "UPDATE payments SET status = 'approved' WHERE mp_payment_id = ?",
-                (str(payment_id),)
-            )
-            db.commit()
+                if payment.get('status') == 'approved':
+                    db = get_db()
+                    db.execute(
+                        "UPDATE payments SET status = 'approved' WHERE mp_payment_id = ?",
+                        (str(payment_id),)
+                    )
+                    db.commit()
+            except Exception:
+                pass  # não falhar se o pagamento de teste não existir no MP
 
-    return jsonify({'status': 'ok'})
+        return jsonify({'status': 'ok'}), 200
+    except Exception as e:
+        return jsonify({'status': 'ok'}), 200  # sempre retornar 200 para o MP não reenviar
 
 # ─────────────────────────────────────────────
 # CONTATO
